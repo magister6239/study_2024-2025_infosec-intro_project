@@ -74,68 +74,21 @@ header-includes:
 	- `html`
 - Автоматизация процесса создания: `Makefile`
 
-## Создание и первичная настройка виртуальной машины
+## hydra
 
-![](image/1.png){width=70%}
+Запустил apache для работы сайта DVWA. (рис. @fig:001, @fig:005)
 
-![](image/2.png){width=70%}
+![Запуск сервиса для apache](image/1.png){#fig:001 width=70%}
 
-![](image/3.png){width=70%}
+![Форма для брутфорса сайта DVWA](image/5.png){#fig:005 width=70%}
 
-![](image/4.png){width=70%}
+Перешёл в папку со списком распростронённых паролей и разархивировал этот список. (рис. @fig:002)
 
-![](image/5.png){width=70%}
+![Разархивация](image/2.png){#fig:002 width=70%}
 
-## Установка операционной системы
+Запустил hydra с нужными параметрами для брутфорса и получил правильный пароль. (рис. @fig:003, @fig:004)
 
-![](image/6.png){width=70%}
+![Запуск и работа hydra](image/3.png){#fig:003 width=70%}
 
-![](image/7.png){width=70%}
+![Результат работы и правильные данные для входа](image/4.png){#fig:004 width=70%}
 
-![](image/8.png){width=70%}
-
-![](image/9.png){width=70%}
-
-![](image/10.png){width=70%}
-
-![](image/11.png){width=70%}
-
-![](image/12.png){width=70%}
-
-![](image/13.png){width=70%}
-
-![](image/14.png){width=70%}
-
-![](image/15.png){width=70%}
-
-![](image/16.png){width=70%}
-
-![](image/17.png){width=70%}
-
-## Загрузка дополнений
-
-![](image/18.png){width=70%}
-
-![](image/19.png){width=70%}
-
-![](image/20.png){width=70%}
-
-![](image/21.png){width=70%}
-
-## Работа с dmesg
-
-![](image/22.png){width=70%}
-
-![](image/23.png){width=70%}
-
-![](image/24.png){width=70%}
-
-![](image/25.png){width=70%}
-
-![](image/26.png){width=70%}
-
-![](image/27.png){width=70%}
-
-![](image/28.png){width=70%}
-
-![](image/29.png){width=70%}
