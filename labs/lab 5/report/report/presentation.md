@@ -1,37 +1,18 @@
 ---
 ## Front matter
-title: "Индивидуальный проект. Часть 5"
-subtitle: "Основы информационной безопасности"
-author: "Перегудов Александр Вадимович"
-
-## Generic otions
 lang: ru-RU
-toc-title: "Содержание"
+title: Лабораторная работа № 5
+subtitle: Операционные системы
+author:
+  - Перегудов А.В.
+institute:
+  - Российский университет дружбы народов, Москва, Россия
+date: 16 марта 2024
 
-## Bibliography
-bibliography: bib/cite.bib
-csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
-
-## Pdf output format
-toc: true # Table of contents
-toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
-fontsize: 12pt
-linestretch: 1.5
-papersize: a4
-documentclass: scrreprt
-## I18n polyglossia
-polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
-polyglossia-otherlangs:
-  name: english
-## I18n babel
+## i18n babel
 babel-lang: russian
 babel-otherlangs: english
+
 ## Fonts
 mainfont: PT Serif
 romanfont: PT Serif
@@ -41,42 +22,47 @@ mainfontoptions: Ligatures=TeX
 romanfontoptions: Ligatures=TeX
 sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
 monofontoptions: Scale=MatchLowercase,Scale=0.9
-## Biblatex
-biblatex: true
-biblio-style: "gost-numeric"
-biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
-## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
-## Misc options
-indent: true
+
+## Formatting pdf
+toc: false
+toc-title: Содержание
+slide_level: 2
+aspectratio: 169
+section-titles: true
+theme: metropolis
 header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
+ - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
+ - '\makeatletter'
+ - '\beamer@ignorenonframefalse'
+ - '\makeatother'
 ---
 
-# Цель работы
+# Информация
+
+## Докладчик
+
+  * Перегудов Александр Вадимович
+  * Студент группы НКАбд-03-23
+  * Российский университет дружбы народов
+  * [1132239659@pfur.ru]
+  * <https://github.com/magister6239/study_2024-2025_infosec-intro_project>
+
+
+## Объект и предмет исследования
+
+- Burp Suite
+
+## Цели и задачи
 
 Целью данной работы - приобретение навыков по использованию Burp Suite.
 
-# Задание
+## Материалы и методы
 
-# Теоретическое введение
-
-# Выполнение лабораторной работы
-
-Настроил proxy для браузера firefox. (рис. @fig:001)
+- Процессор `pandoc` для входного формата Markdown
+- Результирующие форматы
+	- `pdf`
+	- `html`
+- Автоматизация процесса создания: `Makefile`
 
 ![firefox proxy](image/1.png){#fig:001 width=70%}
 
@@ -105,12 +91,3 @@ header-includes:
 Intruder позволяет создавать и отправлять разные версии одного запроса. Это достигается заменой некоторых частей запроса. Нужно для того чтобы посмотреть как сервер реагирует на разную информацию (например, можно заменять мета данные или пароли в пост запросе.) (рис. @fig:009)
 
 ![Работа Intruder](image/9.png){#fig:009 width=70%}
-
-# Выводы
-
-В данной лаборатной работе были приобретены практические навыки по использованию Burp Suite.
-
-# Список литературы{.unnumbered}
-
-::: {#refs}
-:::
